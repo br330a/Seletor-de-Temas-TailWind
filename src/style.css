@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+/*
+Configuração do darkMode via classe tailwindcss.
+Define que a variante dark: será ativada quando o elemento raiz (html) contiver a classe .dark
+*/
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* 
+Definição de variáveis CSS nativas e Temas usando o bloco @theme
+Permite utilizar cores customizadas em toda a sua aplicação
+*/
+
+@theme {
+    --color-brand-primary: #10b981;
+}
