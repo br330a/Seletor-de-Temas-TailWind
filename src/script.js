@@ -11,8 +11,8 @@ if(temaSalvo === 'dark' || (!temaSalvo && prefereEscuro)){
 
 const htmlElem = document.documentElement;
 
-const btnLight = document.getElementbyId('btnLight');
-const btnDark = document.getElementbyId('btnDark');
+const btnLight = document.getElementById('btnLight');
+const btnDark = document.getElementById('btnDark');
 const btnSystem = document.getElementById('btnSystem');
 
 const statusTexto = document.getElementById('statusTexto');
@@ -22,7 +22,7 @@ const statusTexto = document.getElementById('statusTexto');
 const mediaQueryDark = window.matchMedia('(prefers-color-scheme: dark)');
 
 //Estilos para destacar o botão ativo
-const classeAtivo = ['bg-white', 'dark? bg-slate-700', 'shadow-sm', 'text-slate-900', 'dark: text-white'];
+const classeAtivo = ['bg-white', 'dark:bg-slate-700', 'shadow-sm', 'text-slate-900', 'dark:text-white'];
 const classeInativo = ['text-slate-500', 'dark:text-slate-400', 'hover:text-slate-900', 'dark:hover:text-white'];
 
 //Função para atualizar a interface dos botões
