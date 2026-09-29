@@ -13,10 +13,50 @@
     -->
 
 </head>
-<body>
-    
+<body class="bg-slate-100 text-slate-800 dark:bg-slate-900 dark:text-slate-100 min-h-screen flex items-center justify-center p-4 transition-colors duration-300">
+    <main class="bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 p-6 sm:p-8 rounded-2xl shadow-xl max-w-md w-full transition-colors duration-300">
+        <header class="mb-6">
+            <h1 class="text-2xl font-bold mb-2">
+                Gerenciador de Temas
+            </h1>
 
-    
+            <p class="text-slate-500 dark:text-slate-400 text-sm">
+                Alterne entre os modos Claro, Escuro e Sistema
+            </p>
+        </header>
+
+        <div class="grid grid-cols-3 gap-2 p-1.5 bg-slate-100 dark:bg-slate-900 rounded-xl mb-6">
+            <!-- Botão claro-->
+            <button id="btnLight" type="button" class="py-2 px-3 text-xs sm:text-sm font-medium rounded-lg transition-all duration-200">
+                Claro
+            </button>
+
+            <button id="btnDark" type="button"
+                class="py-2 px-3 text-xs sm:text-sm font-medium rounded-lg transition-all duration-200">
+                Escuro
+            </button>
+
+            <button id="btnSystem" type="button"
+                class="py-2 px-3 text-xs sm:text-sm font-medium rounded-lg transition-all duration-200">
+                Sistema
+            </button>
+        </div>
+        <!-- área administrativa de conteúdo -->
+
+        <section class="p-4 rounded-xl bg-slate-50 dark:bg-slate-900/50 border border-slate-200/60 dark:border-slate-700/60">
+            <span class="text-xs font-semibold uppercase tracking-wider text-brand-primary">
+                Status Atual
+            </span>
+
+            <p id="statusTexto" class="text-sm mt-1 font-medium">
+                Carregando preferência...
+            </p>
+        </section>
+    </main>
+
+    <!-- Lógica em javascript para a manipulação do tema -->
+
+
     <script src="/src/script.js"></script>
 </body>
 </html>
