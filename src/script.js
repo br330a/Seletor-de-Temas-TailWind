@@ -31,4 +31,16 @@ function atualizarBotoes(opcaoAtiva){
         btn.classList.remove(...classeAtivo);
         btn.classList.add(...classeInativo);
     });
+
+    if(opcaoAtiva === 'light'){
+        btnLight.classList.add(...classeAtivo);
+        btnLight.classList.remove(...classeInativo);
+
+    }else if(opcaoAtiva === 'dark'){
+        btnDark.classList.add(...classeAtivo);
+        btnDark.classList.remove(...classeInativo);
+    }else {
+        btnSystem.classList.add(...classeAtivo);
+        btnSystem.classList.remove(...classeInativo);
+    }
 }
